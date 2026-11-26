@@ -1,0 +1,54 @@
+site_name: Morphine
+site_description: Unity 6 blend shape authoring, clip baking, and AnimatorController aggregation toolkit by Anodyne Technologies
+repo_url: https://github.com/Anodyne-Technologies/Morphine
+repo_name: Anodyne-Technologies/Morphine
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Overview: index.md
+  - User Guide:
+      - Getting Started: UserGuide/01-Getting-Started.md
+      - Authoring Morphs: UserGuide/02-Authoring-Morphs.md
+      - Building Clips & Base Controller: UserGuide/03-Building-Clips-and-Base-Controller.md
+      - Animator Aggregation: UserGuide/04-Animator-Aggregation.md
+      - Animator Overrides: UserGuide/05-Animator-Overrides.md
+      - Constants & Runtime Playback: UserGuide/06-Constants-and-Runtime-Playback.md
+      - Troubleshooting & Best Practices: UserGuide/07-Troubleshooting-and-Best-Practices.md
+  - Scripting API:
+      - Index: ScriptingAPI/Index.md
+      - Runtime:
+          - MorphineDrip: ScriptingAPI/Runtime/MorphineDrip.md
+          - Morph: ScriptingAPI/Runtime/Morph.md
+          - MorphCollection: ScriptingAPI/Runtime/MorphCollection.md
+          - MorphClipBinding: ScriptingAPI/Runtime/MorphClipBinding.md
+          - BlendShapeData: ScriptingAPI/Runtime/BlendShapeData.md
+          - MorphineConstantsConfig: ScriptingAPI/Runtime/MorphineConstantsConfig.md
+      - Editor:
+          - Authoring & Preview: ScriptingAPI/Editor/AuthoringAndPreview.md
+          - Build Services: ScriptingAPI/Editor/BuildServices.md
+          - Animator Aggregation: ScriptingAPI/Editor/AnimatorAggregation.md
+          - Animator Overrides: ScriptingAPI/Editor/AnimatorOverrides.md
+          - Constants Generation: ScriptingAPI/Editor/ConstantsGeneration.md
+          - Utilities & Extensions: ScriptingAPI/Editor/UtilitiesAndExtensions.md
+  - Changelog: changelog.md

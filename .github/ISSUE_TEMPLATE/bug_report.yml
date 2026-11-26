@@ -1,0 +1,50 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+labels: ["bug", "triage"]
+body:
+  - type: input
+    id: tool-version
+    attributes:
+      label: Tool Version
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity Version
+      placeholder: "e.g. 6000.0.23f1 or 6000.6.10f1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: render-pipeline
+    attributes:
+      label: Render Pipeline
+      options:
+        - URP
+        - Built-in (BiRP)
+        - HDRP
+        - N/A (Editor Only)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Clear description of the bug and any Console error messages.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. Observe error ...
+    validations:
+      required: true
