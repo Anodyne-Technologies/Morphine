@@ -1,4 +1,4 @@
-# Morphine â€” Documentation & Issue Tracker
+# Morphine - Documentation & Issue Tracker
 
 Welcome to the official documentation and support hub for **Morphine** (by Anodyne Technologies).
 
