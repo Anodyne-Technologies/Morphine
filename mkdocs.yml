@@ -1,7 +1,17 @@
 site_name: Morphine
+site_url: https://anodyne-technologies.github.io/Morphine/
 site_description: Unity 6 blend shape authoring, clip baking, and AnimatorController aggregation toolkit by Anodyne Technologies
 repo_url: https://github.com/Anodyne-Technologies/Morphine
 repo_name: Anodyne-Technologies/Morphine
+
+plugins:
+  - search
+  - panzoom:
+      mermaid: true
+      images: true
+      full_screen: true
+      always_show_hint: false
+      hint_location: "bottom"
 
 theme:
   name: material
