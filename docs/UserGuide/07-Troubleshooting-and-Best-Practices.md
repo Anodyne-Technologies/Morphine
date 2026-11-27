@@ -30,7 +30,7 @@ Key Unity 6 Mecanim behaviors and Morphine design patterns to keep your characte
 
 **Cause:** Unity often serializes Layer 0 of a standalone `AnimatorController` with `defaultWeight = 0` even though Layer 0 always evaluates at weight `1`.
 
-**Solution:** Use `Tools > Morphine > Animator Aggregator`—it automatically detects Layer 0 `defaultWeight == 0` when placing a source's Layer 0 at target index `> 0` and promotes it to `1.0` (indicated by the **`wt:1 (0->1)`** badge in the Dry-Run Preview).
+**Solution:** Use `Window > Animation > Animator Aggregator`. It automatically detects Layer 0 `defaultWeight == 0` when placing a source's Layer 0 at target index `> 0` and promotes it to `1.0` (indicated by the **`wt:1 (0->1)`** badge in the Dry-Run Preview).
 
 ---
 
@@ -58,4 +58,4 @@ Key Unity 6 Mecanim behaviors and Morphine design patterns to keep your characte
 
 - **Keep Aggregation Recipes Editor-Only**: `AnimatorAggregationRecipe` lives in `Anodyne.Morphine.Editor`, so your source controllers (`Locomotion.controller`, `UpperBody.controller`, etc.) are never pulled into Player builds—only the final baked output `.controller` is referenced by your prefabs.
 - **Exclude Raw Base Skin Layers When Unused**: If your character only plays authored custom expressions (like `Expressions` or `Visemes`), uncheck **Include in Controller** on the raw `BASE` skin collection (`Plasto_Head`) in the **Morphs** or **Build & Constants** tab to keep your runtime `AnimatorController` layer and parameter counts lean.
-- **Documentation Folder (`Documentation~/`)**: Morphine's documentation and screenshots live in `Assets/Morphine/Documentation~/` (trailing tilde) so Unity skips importing documentation images as project textures.
+- **Documentation Folder (`Documentation~/`)**: Morphine's documentation and screenshots live in `Assets/Anodyne/Morphine/Documentation~/` (trailing tilde) so Unity skips importing documentation images as project textures.

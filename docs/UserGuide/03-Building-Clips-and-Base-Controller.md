@@ -48,6 +48,6 @@ Clicking **Build Base AnimatorController** or **Build Clips & Base AC** creates 
 | **Build / Sync Clips (Async)** | Incrementally syncs embedded morph clips and `__Morphine_Empty` without touching the Base AC. |
 | **Build Base AnimatorController** | Rebuilds the embedded Base AC in-place using the currently generated clips. |
 | **Build Clips & Base AC** | Runs async clip sync followed by Base AC rebuild (and automatically regenerates C# Constants if **Auto-Generate Constants on Base AC Build** is checked). |
-| **Open in Standalone Animator Aggregator...** | Opens `Tools > Morphine > Animator Aggregator` pre-loaded with this Drip (or its linked `AnimatorAggregationRecipe`). |
+| **Open in Standalone Animator Aggregator...** | Opens `Window > Animation > Animator Aggregator` pre-loaded with this Drip (or its linked `AnimatorAggregationRecipe`). |
 
 Next: [Animator Aggregation →](04-Animator-Aggregation.md)

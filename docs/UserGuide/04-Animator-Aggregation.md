@@ -1,15 +1,15 @@
 # AnimatorController Aggregation
 
-The standalone **Animator Aggregator** (`Tools > Morphine > Animator Aggregator`) combines any ordered list of Unity `AnimatorController` assets and `MorphineDrip` assets into a single baked `.controller` asset—non-destructively and **without requiring a `MorphineDrip`** (you can use it to merge Locomotion, UpperBody, Combat, IK, or facial controllers in any combination).
+The standalone **Animator Aggregator** (`Window > Animation > Animator Aggregator`) combines any ordered list of Unity `AnimatorController` assets and `MorphineDrip` assets into a single baked `.controller` asset, non-destructively and **without requiring a `MorphineDrip`** (you can use it to merge Locomotion, UpperBody, Combat, IK, or facial controllers in any combination).
 
-![Standalone Animator Aggregator — Layers Dry-Run Preview combining Locomotion, UpperBody, and Plasto_Head_DRIP](../Images/04-aggregator-layers-preview.png)
+![Standalone Animator Aggregator - Layers Dry-Run Preview combining Locomotion, UpperBody, and Plasto_Head_DRIP](../Images/04-aggregator-layers-preview.png)
 
 ---
 
 ## Ad-Hoc Mode vs. Saved Recipes
 
-- **Ad-Hoc Mode**: Open `Tools > Morphine > Animator Aggregator`, add controllers/Drips, set an output path, and click **Bake Controller** immediately—no extra asset required.
-- **Reusable Recipe (`AnimatorAggregationRecipe`)**: Click **Save Recipe As...** (or create via `Assets > Create > Morphine > Animator Aggregation Recipe`) to save your source list, prefixes, layer overrides, output controller target, and C# Constants config into an **Editor-only `ScriptableObject`**.
+- **Ad-Hoc Mode**: Open `Window > Animation > Animator Aggregator`, add controllers/Drips, set an output path, and click **Bake Controller** immediately, with no extra asset required.
+- **Reusable Recipe (`AnimatorAggregationRecipe`)**: Click **Save Recipe As...** (or create via `Assets > Create > Animation > Animator Aggregation Recipe`) to save your source list, prefixes, layer overrides, output controller target, and C# Constants config into an **Editor-only `ScriptableObject`**.
   - Double-clicking a Recipe asset in the Project window opens it directly in the Animator Aggregator.
   - Because `AnimatorAggregationRecipe` lives in `Anodyne.Morphine.Editor`, references to your source controllers never leak into Player builds.
 

@@ -1,6 +1,8 @@
 # Morphine Documentation
 
-**Morphine** streamlines authoring, baking, aggregating, and driving `SkinnedMeshRenderer` blend shape rigs in Unity 6. It centers on the **`MorphineDrip`** asset—a self-contained `ScriptableObject` holding your morph recipes, embedded `AnimationClip` sub-assets, embedded `AvatarMask`, and embedded Base `AnimatorController`—paired with a standalone **Animator Aggregator** and compile-time **C# Constants Generator**.
+**Morphine** streamlines authoring, baking, aggregating, and driving `SkinnedMeshRenderer` blend shape rigs in Unity 6. It centers on the **`MorphineDrip`** asset (**DRIP** = **Data Relationships, Identification, & Paths**, a play on the tool's name), a self-contained `ScriptableObject` holding your morph recipes, embedded `AnimationClip` sub-assets, embedded `AvatarMask`, and embedded Base `AnimatorController`, paired with a standalone **Animator Aggregator** and compile-time **C# Constants Generator**.
+
+Every Morphine creation menu and Editor window lives directly under Unity's native **`Animation`** menus (`Assets > Create > Animation` and `Window > Animation`), so Morphine flows naturally into Unity's built-in animation tools rather than forcing a separate workflow.
 
 ---
 
@@ -33,11 +35,11 @@ flowchart LR
 
 | Capability | Entry Point | Output / Storage |
 |---|---|---|
-| **Create Drip from Prefab** | Right-click Prefab → `Assets > Create > Animation > Morphine DRIP` | `<Prefab>_DRIP.asset` + embedded `AvatarMask` |
-| **Live Morph Authoring** | Double-click Drip or `Tools > Morphine > Authoring Window` (`Morphs` tab) | Non-destructive Prefab Stage preview + `MorphCollection` recipes |
-| **Morph Clip & Base AC Build** | Authoring Window (`Build & Constants` tab) or Inspector quick actions | Embedded `AnimationClip`s, `__Morphine_Empty` zero-pose clip, & embedded Base `AnimatorController` |
-| **AnimatorController Aggregation** | `Tools > Morphine > Animator Aggregator` (or **Open Aggregator...** from a Drip) | Dedicated baked `.controller` (updated in-place) + optional Editor-only `AnimatorAggregationRecipe` |
-| **Cross-Character Overrides** | Authoring Window (`Overrides` tab) | Populated `.overrideController` with fallback & locomotion preservation |
+| **Create Drip from Prefab** | Right-click Prefab -> `Assets > Create > Animation > Morphine DRIP` | `<Prefab>_DRIP.asset` + embedded `AvatarMask` |
+| **Live Morph Authoring** | Double-click Drip or `Window > Animation > Morphine DRIP Editor` (`Morphs` tab) | Non-destructive Prefab Stage preview + `MorphCollection` recipes |
+| **Morph Clip & Base AC Build** | DRIP Editor (`Build & Constants` tab) or Inspector quick actions | Embedded `AnimationClip`s, `__Morphine_Empty` zero-pose clip, & embedded Base `AnimatorController` |
+| **AnimatorController Aggregation** | `Window > Animation > Animator Aggregator` (or `Assets > Create > Animation > Animator Aggregation Recipe`) | Dedicated baked `.controller` (updated in-place) + optional Editor-only `AnimatorAggregationRecipe` |
+| **Cross-Character Overrides** | DRIP Editor (`Overrides` tab) | Populated `.overrideController` with fallback & locomotion preservation |
 | **C# Constants Generation** | Build tab, Aggregator (`Auto-Generate on Bake`), Inspector, or `Assets > Create > Animation > Animator Controller C# Constants` | Compile-time `public const` `.cs` file |
 
 ---

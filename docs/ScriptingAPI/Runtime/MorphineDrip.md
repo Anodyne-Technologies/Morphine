@@ -4,7 +4,7 @@
 - **Assembly:** `Anodyne.Morphine`
 - **Inherits:** `UnityEngine.ScriptableObject`
 
-Central data container for a character's morph targets, collections, embedded `AnimationClip`s, embedded `AvatarMask`, and embedded Base `RuntimeAnimatorController`. All sub-asset references (`baseAnimatorController`, `morphClips`, `clipBindings`, `emptyFallbackClip`, `overrideMask`) are runtime-accessible in Player builds.
+Central data container (**DRIP** = **Data Relationships, Identification, & Paths**) for a character's morph targets, collections, embedded `AnimationClip`s, embedded `AvatarMask`, and embedded Base `RuntimeAnimatorController`. All sub-asset references (`baseAnimatorController`, `morphClips`, `clipBindings`, `emptyFallbackClip`, `overrideMask`) are runtime-accessible in Player builds.
 
 ---
 

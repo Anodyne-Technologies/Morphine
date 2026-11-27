@@ -1,6 +1,6 @@
 # Authoring Morphs
 
-The **Morphine Authoring Window** (`Tools > Morphine > Authoring Window`, or double-click any `MorphineDrip` asset) provides a non-destructive 3-pane workspace bound directly to Unity's **Prefab Stage**.
+The **Morphine DRIP Editor** (`Window > Animation > Morphine DRIP Editor`, or double-click any `MorphineDrip` asset) provides a non-destructive 3-pane workspace bound directly to Unity's **Prefab Stage**.
 
 ![Morphine Editor Layout: Authoring Window docked beside Scene View sculpting Plasto_Head](../Images/02-morphine-layout-sculpting.png)
 

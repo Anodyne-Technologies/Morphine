@@ -33,12 +33,12 @@ Centralized, Undo-safe authoring operations on `MorphineDrip`, `MorphCollection`
 ## Editor Windows & Inspectors
 
 ### `MorphineAuthoringWindow` (`Anodyne.Morphine.Editor.UI`)
-- **Menu:** `Tools > Morphine > Authoring Window` (also opened automatically on double-clicking a `MorphineDrip` asset via `MorphineDripEditor.OnOpenMorphineDrip`).
+- **Menu:** `Window > Animation > Morphine DRIP Editor` (also opened automatically on double-clicking a `MorphineDrip` asset via `MorphineDripEditor.OnOpenMorphineDrip`).
 - **Static API:** `MorphineAuthoringWindow.Open(MorphineDrip drip, bool openPrefabStage = true)`
 - **Instance API:** `SetActiveDrip(MorphineDrip drip, bool openPrefabStage = false)`, `SelectWorkspaceTabByName(string tabName)` (`"Morphs"`, `"Build"`, `"Overrides"`).
 
 ### `AnimatorAggregatorWindow` (`Anodyne.Morphine.Editor.UI`)
-- **Menu:** `Tools > Morphine > Animator Aggregator` (also opened automatically on double-clicking an `AnimatorAggregationRecipe` asset).
+- **Menu:** `Window > Animation > Animator Aggregator` (also opened automatically on double-clicking an `AnimatorAggregationRecipe` asset).
 - **Static API:** `AnimatorAggregatorWindow.Open(AnimatorAggregationRecipe recipe = null)`, `AnimatorAggregatorWindow.OpenWithDrip(MorphineDrip drip)`
 - **Instance API:** `SetRecipe(AnimatorAggregationRecipe recipe)`, `SelectPreviewTabByName(string tabName)` (`"Layers"`, `"Parameters"`, `"Diagnostics"`).
 
@@ -46,4 +46,4 @@ Centralized, Undo-safe authoring operations on `MorphineDrip`, `MorphCollection`
 Custom UI Toolkit Inspector for `MorphineDrip`. Exposes helper methods `BuildBaseCollections()` and `MorphineCollectionInjection()` (delegating to `MorphineDripService.SyncBaseCollections` and `BaseAnimatorBuildService.BuildOrSyncBaseController`).
 
 ### `EditorMenus` (`Anodyne.Morphine.Editor`)
-Provides `Assets > Create > Animation > Morphine DRIP` for prefabs containing `SkinnedMeshRenderer`s with blend shapes.
+Provides `Assets > Create > Animation > Morphine DRIP` (for prefabs containing `SkinnedMeshRenderer`s with blend shapes) and `Window > Animation > Animator Aggregator`.

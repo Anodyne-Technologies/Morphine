@@ -9,7 +9,7 @@ Programmatic API for non-destructive deep-cloning `AnimatorController` aggregati
 
 ## `AnimatorAggregationRecipe`
 
-Editor-only `ScriptableObject` (`[CreateAssetMenu(menuName = "Morphine/Animator Aggregation Recipe")]`) storing a reusable merge configuration.
+Editor-only `ScriptableObject` (`[CreateAssetMenu(menuName = "Animation/Animator Aggregation Recipe")]`) storing a reusable merge configuration.
 
 | Field | Type | Description |
 |---|---|---|

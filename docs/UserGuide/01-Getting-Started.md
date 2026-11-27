@@ -11,7 +11,7 @@ This guide walks through setting up your first **Morphine Drip** using the inclu
 | **BlendShape** (`BlendShapeData`) | A single blend shape index on a specific `SkinnedMeshRenderer` (e.g., `Smile L` on `Plasto_Head`). |
 | **Morph** | A named recipe mapping one or more `BlendShapeData` targets to authored base weights (`0–100`), identified by a stable internal GUID (`Id`). |
 | **MorphCollection** | An ordered group of `Morph` objects (e.g., the auto-synced `Plasto_Head` base skin collection, or custom collections like `Expressions` or `Visemes`). Each collection has an `Include in Controller` toggle. |
-| **MorphineDrip** | A self-contained `ScriptableObject` asset (`*_DRIP.asset`) that stores your prefab link, usable skins, morph collections, embedded morph `AnimationClip`s, embedded `AvatarMask`, and embedded Base `AnimatorController`. |
+| **MorphineDrip** (**DRIP**) | **DRIP** stands for **Data Relationships, Identification, & Paths** (and plays on the name *Morphine*). A `MorphineDrip` is a self-contained `ScriptableObject` asset (`*_DRIP.asset`) that stores your prefab link, usable skins, morph collections, embedded morph `AnimationClip`s, embedded `AvatarMask`, and embedded Base `AnimatorController`. |
 | **Base AnimatorController** | A morph-only `AnimatorController` stored as a sub-asset inside the `MorphineDrip`. Each included `MorphCollection` becomes an `Additive` layer (`weight = 1`) with a `Direct` BlendTree. |
 | **Animator Aggregation Recipe** | An optional Editor-only asset (`AnimatorAggregationRecipe`) used by the standalone **Animator Aggregator** to non-destructively combine any number of project `AnimatorController`s and `MorphineDrip` assets into a single baked `.controller`. |
 
